@@ -3,15 +3,15 @@ var app = (function () {
     var preguntas = [
         {
             "variable": "PDA",
-            "pregunta": "1 - ¿Ha padecido un apetito pobre inexplicado o perdida de peso recientemente?"
+            "pregunta": "1 - ¿Ha padecido un apetito pobre inexplicado o pérdida de peso recientemente?"
         },
         {
             "variable": "PDE",
-            "pregunta": "2 - ¿Ha tenido sensacion de cansancio o debilidad recientemente?"
+            "pregunta": "2 - ¿Ha tenido sensación de cansancio o debilidad recientemente?"
         },
         {
             "variable": "DDC",
-            "pregunta": "3. ¿Ha tenido dificultad para pensar o contrantrarse recientemente?"
+            "pregunta": "3. ¿Ha tenido dificultad para pensar o concentrarse recientemente?"
         },
         {
             "variable": "SDC",
@@ -23,7 +23,7 @@ var app = (function () {
         },
         {
             "variable": "CEA",
-            "pregunta": "6 - ¿Ha sufrido cambios bruscos y repentinos en el estado de animo?"
+            "pregunta": "6 - ¿Ha sufrido cambios bruscos y repentinos en el estado de ánimo?"
         },
         {
             "variable": "PSM",
@@ -31,7 +31,7 @@ var app = (function () {
         },
         {
             "variable": "PDP",
-            "pregunta": "8 - ¿Ha experimentado perdida de placer en las actividad que antes gozaba?"
+            "pregunta": "8 - ¿Ha experimentado pérdida de placer en las actividad que antes gozaba?"
         },
         {
             "variable": "DPD",
@@ -39,7 +39,7 @@ var app = (function () {
         },
         {
             "variable": "SDT",
-            "pregunta": "10 - ¿Se ha sentido triste o desgraciado por un periodo prolongado recientemente?"
+            "pregunta": "10 - ¿Se ha sentido triste o desgraciado por un período prolongado recientemente?"
         }
     ];
 
@@ -92,23 +92,23 @@ var app = (function () {
         var esTB = esTrastornoBipolar();
         var esTC = esTrastornoCiclotimico();
         if (esTDM) {
-            $('.js-resultado-text').html('Usted probablemente sufra un <strong>Trastorno Depresivo Mayor</strong>.<br> Consulte a un medico psiquiatra sobre este resultado.');
+            $('.js-resultado-text').html('Usted probablemente sufra un <strong>Trastorno Depresivo Mayor</strong>.<br> Consulte a un médico psiquiatra sobre este resultado.');
         }
         if (esTD) {
-            $('.js-resultado-text').html('Usted probablemente sufra un <strong>Trastorno Distimico</strong>.<br> Consulte a un medico psiquiatra sobre este resultado.');
+            $('.js-resultado-text').html('Usted probablemente sufra un <strong>Trastorno Distímico</strong>.<br> Consulte a un médico psiquiatra sobre este resultado.');
         }
         if (esTPS) {
-            $('.js-resultado-text').html('Usted probablemente sufra un <strong>Trastorno por Sustancias</strong>.<br> Consulte a un medico psiquiatra sobre este resultado.');
+            $('.js-resultado-text').html('Usted probablemente sufra un <strong>Trastorno por Sustancias</strong>.<br> Consulte a un médico psiquiatra sobre este resultado.');
         }
         if (esTB) {
-            $('.js-resultado-text').html('Usted probablemente sufra un <strong>Trastorno Bipolar</strong>.<br> Consulte a un medico  psiquiatrasobre este resultado.');
+            $('.js-resultado-text').html('Usted probablemente sufra un <strong>Trastorno Bipolar</strong>.<br> Consulte a un médico  psiquiatra sobre este resultado.');
         }
         if (esTC) {
-            $('.js-resultado-text').html('Usted probablemente sufra un <strong>Trastorno Ciclotimico</strong>.<br> Consulte a un medico psiquiatra sobre este resultado.');
+            $('.js-resultado-text').html('Usted probablemente sufra un <strong>Trastorno Ciclotímico</strong>.<br> Consulte a un médico psiquiatra sobre este resultado.');
         }
         if (!esTDM && !esTD && !esTPS && !esTB && !esTC) {
             $('.js-resultado-text').html('No se ha podido determinar su cuadro.<br> Si piensa que puede estar sufriendo un trastorno depresivo consulte \n\
-        a un medico psiquiatra.');
+        a un médico psiquiatra.');
         }
         $('.js-pregunta-container').hide();
         $('.js-resultado').show();
