@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sistema Experto - Diagnostico de Trastornos Depresivos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/app.css" />
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>
+                        Sistema experto para detección de trastornos depresivos
+                    </h1>
+                    <p>
+                        El objetivo del mismo es que, mediante una serie de preguntas orientativas, el usuario pueda determinar si padece un trastorno depresivo. 
+                        De esta manera, se busca que aquellas personas que sufren de este tipo de trastornos puedan tratarlos efectivamente, ya que la mayoría no lo hace debido a que desconocen su existencia. 
+                        Cabe destacar que, ante el resultado positivo de este test, es necesario realizar una consulta con un médico psiquiatra. 
+                        Es muy importante jamás automedicarse, y realizar un tratamiento supervisado por un especialista.
+                    </p> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center js-comienzo-test">
+                        <div class="btn btn-success btn-lg "> Comenzar Diagnóstico </div>
+                    </div>
+                    <div class="js-pregunta-container pregunta-container col-md-offset-2 col-md-8">
+                        <div class="contador">
+                            <span class="js-contador">1</span>/<span class="js-contador-total">12</span>
+                        </div>
+                        <div class="pregunta js-pregunta"></div>
+                        <div class="opciones">
+                            <div class="opcion btn btn-info js-opcion-si">Si</div>
+                            <div class="opcion btn btn-info js-opcion-no">No</div>
+                        </div>
+                    </div>
+                    <div class="js-resultado resultado-container col-md-offset-2 col-md-8">
+                        <p class="js-resultado-text"></p>
+                        <div class="btn btn-success js-reiniciar">REPETIR EL TEST</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+        <script>
+            app.init();
+        </script>
+    </body>
+</html>
